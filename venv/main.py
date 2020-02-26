@@ -27,7 +27,7 @@ def opening_file(args):
             pass
         my_logger.info("File doesn't exists. Created new file.")
 
-    # if file exists I open the file with decorator
+    # if file exists I open the file with context menager
     with open("words.txt", "r+") as file:
         my_logger.info("File Open.")
         # reading given arguments to a variable
